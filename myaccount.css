@@ -1,0 +1,120 @@
+* { padding:0; margin:0; outline:0; }
+h1#logo { font-size:0; line-height:0; width:156px; height:64px; float:left;}
+h1#logo a{ display:block; height:64px; text-indent: -4000px; background:url(Untitled.jpg); }
+
+        .shell { width:100%; margin:0 auto; padding:0px;background: linear-gradient(to right, #F6C7B3,#F59678,#F16848,#EE2424 );font-size: 12px}
+            
+
+#header { height:64px; background:#59CFFF; position:relative;}
+#navigation { float:right; white-space:nowrap;}
+#navigation ul{ list-style-type: none; height:64px; font-weight: bold; float:left;}
+#navigation ul li{ float:left; display:inline; }
+#navigation ul li a{ float:left; height:64px; line-height:64px; text-decoration: none; color:#fff; padding:0 25px;font-family: 'Droid Sans', sans-serif;text-transform: uppercase;transition: 1s;/*text-shadow:  2px 2px 2px #000000;*/}
+#navigation ul li a.active,
+#navigation ul li a:hover{ background:#fff; color:black;text-shadow: none;}
+#cart { float:right; width:160px; top:0; right:0; height:51px; background:#00B6FF; color:#fff; padding:13px 10px 0 10px; white-space:nowrap; line-height:20px;border-radius: 10px;font-family: 'Dosis', sans-serif;}
+a.cart-link { color:#fff; background:url(images/Untitled.png) no-repeat 0 0; padding:0 0 0 32px; text-decoration: none;font-family: 'Raleway', sans-serif;}
+a.cart-link:hover { text-decoration: underline;}
+    #carte {position:relative;bottom:19px;left:65px;font-size:20px;color:white;border:1px solid transparent;width:15px;padding-left:5px;padding-bottom: 2px; opacity: 0.7;border-radius: 50px;box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);}
+          #check{position:relative;bottom:24px;left:105px;color:white;text-decoration: none;}
+          #check:hover {color: black; text-decoration: underline;}
+#wrap {position: relative;bottom:-120px;border-top:1px solid black;border-left:1px solid black;width:1000;left:230;border-right: 1px solid black;height: 408px;border:1px solid #59cfff;}
+          #side {width:450px;position:relative;left:-90px;padding-bottom: 25px;}
+          #side ul li a {text-decoration: none;color:#D2E3F4;transition:0.5s}
+          #side ul li a:hover {color:black;}
+          #side h3 {padding-bottom: 5px;position: relative;right:0px;color:#fff}
+          #mane {position: relative;left:-69px}
+          #side ul li {list-style-type: none;padding-bottom: 2px;}
+          #your1 {width:200px;padding-top: 15px;background:#59CFFF;position:relative;overflow: hidden;right:65;padding-left: 60px;color:whitesmoke;}
+          #fresco {width:174px;padding-left: 85px;padding-top: 10px;background:cadetblue ;position:relative;left:90;border-right:1px solid #59cfff;}
+          #fresco2 {width:174px;padding-left: 85px;padding-top:10px;position:  relative;left:90;border-right:1px solid #59cfff;background:cadetblue;padding-bottom:234}
+ #gobhir{display:none;}
+              #sonabo {position: relative;
+    top: -370px;
+    width: 350;
+    height: 45px;
+    padding: 5px;
+    left: 106;
+    display: none;}
+              #bikalbali{    position: relative;
+    top: -328px;
+    padding: 5px;
+    left: 106px;
+    display: none;}
+              #ar {    position: relative;
+    top: -277px;
+    left: 106px;
+    display: none;}
+              #akh {position: relative;
+    top: -245px;
+    left: 107px;
+    border: 1px solid darkgrey;
+    color: darkslategray;
+    display: none;}
+              #baar{display:none;position: relative;top:-547;left:375px;font-size: 14px;background:cadetblue;border:none;padding:5px;padding-left: 10px;padding-right: 10px;border-radius: 5px;color:whitesmoke;box-shadow:1px 1px 1px 1px darkgreen;transition: 0.5s;}
+              #baar:hover {color:white;box-shadow:1px 1px 1px darkgreen;}
+              #maata{position: relative;left:130;width:300;padding-top: 15px;color:whitesmoke;}
+              #address{background: #59CFFF}
+              
+          #address1 {padding-top: 25px;
+    padding-bottom: 45px;
+    padding-left: 15px;
+    font-size: 16px;
+    width: 60px;
+    background: #59CFFF;
+    border-top: 1px solid whitesmoke;
+    color: white;
+}
+              #ans1 {position: relative;top:-62.4px;left:100;font-size: 16px;width:530px;padding-left: 5px;color:darkcyan;}
+              #edit2 {    position: relative;
+    top: -149px;
+    left: 400;
+    font-size: 14px;
+    width: 10px;}
+          #edit2 a {text-decoration: none;color:whitesmoke;padding:5px;background:cadetblue;padding-left:10px;padding-right: 10px;border-radius: 5px;box-shadow: 1px 1px 1px 1px darkgreen;transition: 0.5s;}
+          #edit2 a:hover {color:white;box-shadow:1px 1px 1px darkgreen;opacity:0.8;}
+              #pin {padding-top: 25px;
+    padding-bottom: 44px;
+    padding-left: 15px;
+    font-size: 16px;
+    width: 60px;
+    background: #59CFFF;
+    border-top: 1px solid whitesmoke;
+    color: white;
+    position: relative;
+    top: -35px;}
+              #ans2 {position: relative;top:-108.4px;left:100;font-size: 16px;width:530px;padding-left: 5px;color:darkcyan;}
+              #town {padding-top: 25px;
+    padding-bottom: 44px;
+    padding-left: 15px;
+    font-size: 16px;
+    width: 60px;
+    background: #59CFFF;
+    border-top: 1px solid whitesmoke;
+    color: white;
+    position: relative;
+    top: -65px;}
+              #ans3 {position: relative;top:-127.4px;left:100;font-size: 16px;width:530px;padding-left: 5px;color:darkcyan;}
+              #city {padding-top:25px;padding-bottom: 25px;padding-left:15px;font-size:16px;width:60px;background:#59CFFF;border-top:1px solid whitesmoke;color:white;position: relative;top:-95px;}
+              #ans4 {position: relative;top:-138.4px;left:100;font-size: 16px;width:530px;padding-left: 5px;color:darkcyan;}
+ #ajax{position: absolute;width:635px;top:-0px;left:365}
+          #haj{position: relative;left:130;width:300;padding-top: 15px;color:whitesmoke;}
+          #cover1 {background: #59CFFF}
+          input[type=text]{padding: 4px;font-size: 15px;border-radius:5px;border:1px solid darkgrey;color:darkslategray;}
+          input[type=tel]{padding: 4px;font-size:15px;border-radius:5px;border:1px solid darkgrey;color:darkslategrey;}
+          #bondu {position:relative;top:-60px;left:100;visibility: hidden;}
+          #bondu1 {position:relative;top:-60px;left:100;visibility: hidden;}
+          #bondu2 {position: relative;top:-60.5px;left:120;visibility: hidden;}
+          #submit {position: relative;top:-161.6px;left:397;font-size: 14px;background:cadetblue;border:none;padding:5px;padding-left: 10px;padding-right: 10px;border-radius: 5px;color:whitesmoke;box-shadow:1px 1px 1px 1px darkgreen;transition: 0.5s;display: none;}
+          #submit:hover {color:white;box-shadow:1px 1px 1px darkgreen;}
+          #full {height:69px;border-bottom:1px solid #59cfff;}
+          #full2 {height:69px;border-bottom:1px solid #59cfff;}
+          #contactna {padding-top:25px;padding-bottom:25px;padding-left:15px;font-size:16px;width:60px;background:#59CFFF;border-top:1px solid whitesmoke;color:white;}
+          #names {position: relative;top:-42.4px;left:100;font-size: 16px;width:530px;padding-left: 5px;color:darkcyan;}
+          #edit1 {position: relative;top:-140px;left:400;font-size:14px;width:10px;}
+          #edit1 a {text-decoration: none;color:whitesmoke;padding:5px;background:cadetblue;padding-left:10px;padding-right: 10px;border-radius: 5px;box-shadow: 1px 1px 1px 1px darkgreen;transition: 0.5s;}
+          #edit1 a:hover {color:white;box-shadow:1px 1px 1px darkgreen;opacity:0.8;}
+          #contactno {padding-top: 25px;padding-bottom: 25px;padding-left: 15px;font-size:16px;width:60px;background:#59CFFF;border-top:1px solid whitesmoke;color:white;}
+          #numbers {position:relative;top:-42.4px;left:100;font-size: 16px;width:530px;padding-left: 5px;color:darkcyan}
+      
+      

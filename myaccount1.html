@@ -1,0 +1,52 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="myaccount1.js"></script>
+<div id="head"><h1 id="PersonalIn">Personal informations</h1></div>
+<div id="color">
+<div id="name">Name:</div> <div id="nameas" class="one">Rudra Pratap Sinha</div>
+<div id="email">Email:</div> <div id="emailas" class="one">rudrajohn.rs@gmail.com</div>
+<div id="phone">Phone:</div> <div id="phoneas" class="one">+918013658305</div>
+<button id="edit" onclick="hide()">Edit</button>
+
+<div id="form">
+<form>
+ <input id="firstname" type="text" autofocus name="firstname" placeholder="Your first name" required>
+ <input id="lastname" type="text" name="lastname" placeholder="Your last name">
+ <input id="emailid" type="email" name="email" placeholder="Your email address">
+ <input id="phonenumber" type="text" name="number" placeholder="Your phone number" required>
+ <input id="save" type="submit" value="Save">   
+</form>
+</div>
+</div>
+<style>
+    #PersonalIn {background: #59cfff;padding:8px;color:whitesmoke;}
+    #color {background:cadetblue;}
+    #name {padding:5px;padding-left:20px;font-size:18px;color:white;background:#59cfff;}
+    #nameas {position:relative;top:-31px;font-size:18px;left:120;background:cadetblue;width:490px;padding-left: 25px;height:25px;padding-top:5px;color:white;border-bottom:1px solid #59cfff}
+    #email {position: relative;top:-34px;padding:5px;color:white;background:#59cfff;font-size:18px;padding-left:20px;}
+    #emailas {position: relative;top:-64px;font-size: 18px;left:120;height:23px;padding-top: 6px;background:cadetblue;width:490px;padding-left: 25px;border-bottom:1px solid #59cfff;color:white}
+    #phone {position: relative;padding:5px;color:white;background:#59cfff;font-size:18px;padding-left:20px;top:-64px;}
+    #phoneas {font-size: 18px;left:120;height:24px;padding-top: 6px;background:cadetblue;width:490px;padding-left: 25px;border-bottom:1px solid #59cfff;color:white;position: relative;top:-95}
+    #edit {width:105px;height:45px;font-size:20px;background:limegreen;color:floralwhite;border:1px solid white;box-shadow:1px 1px 2px 2px darkgreen;
+    position: relative;top:-80px;left:122px;transition: 0.5s;cursor: pointer;border-radius: 5px;}
+    #edit:hover {opacity:0.8;box-shadow:1px 1px 1px 1px darkgreen}
+    #edit:action {opacity:0.3;box-shadow:none;}
+
+</style>
+<style>
+    #firstname{width:55px}
+
+
+</style>
+
+<!--
+<script>
+$(document).ready(function(){
+    $("#edit").click(function(){
+        $(".one").slideUp();
+                     });
+    
+});
+
+
+
+</script>-->
