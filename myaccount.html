@@ -1,97 +1,85 @@
-<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:600' rel='stylesheet' type='text/css'>
-<link href="myaccount.css" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="myaccount1.js"></script>
-
-
-<div class="shell">
-  <!-- Header -->
-  <div id="header">
-    <h1 id="logo"><a href="#">shoparound</a></h1>
-    <!-- Cart -->
-    <div id="cart"> <a id="confirm" href="#" class="cart-link">Hi <?php echo $userRow['user_name']; ?>, <?php if(!isset($_SESSION['userSession'])) {echo "Login";} else { echo "not you?";}?></a>
-<div class="cl"></div>
-Your cart:<div id="carte"><?php echo $userRow['cart']; ?></div> <div><a id ="check" href="#"></a></div>
-      </div>
-<script>
-      var check = document.getElementById("carte").innerHTML;
-      if(check == "0"){
-          document.getElementById("check").innerHTML = "";
-      }
-    else{
-        document.getElementById("check").innerHTML = "Checkout";
-    }
-      
-      if(check != "0"){
-          document.getElementById("carte").style.backgroundColor = "red";
-          document.getElementById("carte").style.opacity = "1";
-      }
-      
-      </script>
-     <script>
-document.getElementById("confirm").addEventListener("click", function(){
-    var r = confirm("Are you sure you want to logout?");
-    if (r == true) {
-        window.location.href = "http://127.0.0.1/thesweetshop/logout.php?logout";
-    } 
-});
-</script>
-    <!-- End Cart -->
-    <!-- Navigation -->
-      
-    <div id="navigation">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#" class="active">My Account</a></li>
-        <li><a href="#">The Store</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <!-- End Navigation -->
-      <div id="wrap"><div id="side">
-          <h1 id="your1">Your account</h1>
-          <ul id="fresco"><h3 id="mane">Settings</h3>
-              <li><a href="#">Personal informations</a></li>
-              
-              <li><a href="#" onclick="Add()">Addresses</a></li>
-        
+    <link href="myaccount.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="myaccount1.js"></script>
+  </head>
+  <body>
+    <div class="shell">
+      <!-- Header -->
+      <div id="header">
+        <h1 id="logo"><a href="#" <!--there should be an id or a class or an href (not #) if you want to be able to access this element without having to do nasty and annoying DOM traversal -->>shoparound</a></h1>
+        <!-- Cart -->
+        <div id="cart"> <a id="confirm" href="#" class="cart-link">Hi <?php echo $userRow['user_name'] . ", "; if( !isset( $_SESSION['userSession'] ) ) { echo "Login"; } else { echo "not you?"; } ?></a>
+          <div class="cl">            <!-- stuff? -->         </div>
+          <!-- this should have a container -->Your cart:<div id="carte"><?php echo $userRow['cart']; ?></div><!-- /this should have a container -->
+          <div>
+            <a id ="check" href="#"></a>
+          </div>
+        </div>
+        <script>
+          if ( $( "#carte" ).html() == "0" ) {
+            $( "#check" ).html( "" );
+          } else {
+            $( "#check" ).html( "Checkout" );
+            $( "#carte" ).css( { "background-color": "red", "opacity": "1" } );
+          }
+        </script>
+        <script>
+          $( "#confirm" ).click( function() {
+              if ( confirm( "Are you sure you want to logout?" ) ) {
+                  window.location.href = "http://127.0.0.1/thesweetshop/logout.php?logout";
+              }
+          } );
+        </script>
+        <!-- End Cart -->
+        <!-- Navigation -->
+        <div id="navigation">
+          <ul>
+            <li><a href="#"<!--there should be an id or a class or an href (not #) if you want to be able to access this element without having to do nasty and annoying DOM traversal -->>Home</a></li>
+            <li><a href="#"<!--there should be an id or a class or an href (not #) if you want to be able to access this element without having to do nasty and annoying DOM traversal -->>Support</a></li>
+            <li><a href="#" class="active">My Account</a></li>
+            <li><a href="#"<!--there should be an id or a class or an href (not #) if you want to be able to access this element without having to do nasty and annoying DOM traversal -->>The Store</a></li>
+            <li><a href="#"<!--there should be an id or a class or an href (not #) if you want to be able to access this element without having to do nasty and annoying DOM traversal -->>Contact</a></li>
           </ul>
-          <ul id="fresco2"><h3>Order</h3>
+        </div>
+        <!-- End Navigation -->
+        <div id="wrap">
+          <div id="side">
+            <h1 id="your1">Your account</h1>
+            <ul id="fresco"><h3 id="mane">Settings</h3>
+              <li><a href="#">Personal informations</a></li>
+              <li><a href="#" onclick="Add()">Addresses</a></li>
+            </ul>
+            <ul id="fresco2"><h3>Order</h3>
               <li><a href="#">Your orders</a></li>
               <li><a href="#">Your wishlist</a></li>
-          
-          </ul>
-          <script>
-function Add() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (xhttp.readyState == 4 && xhttp.status == 200) {
-      document.getElementById("ajax").innerHTML = xhttp.responseText;
-    }
-  };
-  xhttp.open("GET", "myaccount1.html", true);
-  xhttp.send();
-}
-</script>
-          
+            </ul>
+            <script>
+              function Add() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                  if ( xhttp.readyState == 4 && xhttp.status == 200 ) {
+                    $( "#ajax" ).html( xhttp.responseText );
+                  }
+                };
+                xhttp.open( "GET", "myaccount1.html", true );
+                xhttp.send();
+              }
+            </script>
           </div>
-          
-      <div id="ajax">
-          
-          
-          
-          
-          
+          <div id="ajax">
+            <!-- stuff? -->
           </div>
+        </div>
       </div>
     </div>
-</div>
-          
-        
+  </body>
+</html>
