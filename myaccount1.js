@@ -1,6 +1,5 @@
-$(document).ready(function(){
-    $("#edit").click(function(){
-        $(".one").slideUp();
-                     });
-    
-});
+$( document ).ready( function() {
+    $( "#edit" ).click( function() {
+        $( ".one" ).slideUp();
+    } );
+} );
